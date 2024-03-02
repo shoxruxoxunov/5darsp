@@ -1,0 +1,155 @@
+/* roboto-slab-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/roboto-slab-v34-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-slab-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/roboto-slab-v34-latin-500.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-slab-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/roboto-slab-v34-latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+#root {
+  --primary-color: #ff6464;
+  --transition-time: 0.3s;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 2px dotted var(--primary-color);
+  outline-offset: 3px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.header {
+  margin-bottom: 2.5rem;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    a {
+      color: #222;
+      transition: color var(--transition-time);
+      font-weight: 500;
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  .logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #222;
+    transition: color var(--transition-time);
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}
+
+.news-section__container {
+  img {
+    border-radius: 50%;
+  }
+}
+
+.create__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.create__button {
+  display: inline-block;
+  color: aliceblue;
+  background-color: #ff6464;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+
+  border-radius: 5px
+}
+
+.max-container {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.items {
+  text-decoration:none;
+  padding-top: 50px;
+}
