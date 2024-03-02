@@ -2,6 +2,7 @@ import useFetch from "../hooks/useFetch";
 import parse from "html-react-parser";
 function Home() {
   const { data, isPending, error } = useFetch("http://localhost:3000/news");
+  console.log(isPending, error);
   return (
     <div className="container">
       <ul className="max-container">

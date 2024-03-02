@@ -10,7 +10,7 @@ function Create() {
     "http://localhost:3000/news",
     "POST"
   );
-
+  console.log(data, isPending, error);
   const toolbarOptions = [
     ["bold", "italic", "underline", "strike"], // toggled buttons
     ["blockquote", "code-block"],
