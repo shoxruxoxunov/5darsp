@@ -8,7 +8,7 @@ function Home() {
       <ul className="max-container">
         {data &&
           data.map((newArticle: object) => {
-            return <li className="items">{parse(newArticle?.body)}</li>;
+            return <li className="items">{parse(newArticle?.body!)}</li>;
           })}
       </ul>
     </div>
