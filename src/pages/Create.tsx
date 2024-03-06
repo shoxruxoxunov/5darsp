@@ -3,6 +3,7 @@ import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import useFetch from "../hooks/useFetch";
 import { v4 as uuidv4 } from "uuid";
+import Button from "../components/Button";
 
 function Create() {
   const [value, setValue] = useState("");
@@ -55,7 +56,7 @@ function Create() {
               value={value}
               onChange={setValue}
             />
-            <button className="create__button">Create</button>
+       <Button status={isPending} text="Create" type="danger"></Button>
           </form>
         </div>
       </section>

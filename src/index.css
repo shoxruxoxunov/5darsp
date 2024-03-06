@@ -125,13 +125,17 @@ body {
 .create__button {
   display: inline-block;
   color: aliceblue;
-  background-color: #ff6464;
+  /* background-color: #ff6464; */
   padding: 10px 10px 10px 10px;
   text-align: center;
   margin-top: 20px;
   cursor: pointer;
 
   border-radius: 5px
+}
+
+.danger {
+  background-color: blue
 }
 
 .max-container {
@@ -150,6 +154,6 @@ body {
 }
 
 .items {
-  text-decoration:none;
+  text-decoration: none;
   padding-top: 50px;
 }

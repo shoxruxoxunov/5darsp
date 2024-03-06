@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-type ObjArrOrNull = object[] | null;
-type StrOrBoolen = string | boolean;
+type ObjArrOrNull =[] | null;
+type Boolen = boolean;
 type StrOrNull = string | null;
 type Object = object;
 
 function useFetch(url: string, method: string = "GET") {
   const [data, setData] = useState<ObjArrOrNull>(null);
-  const [isPending, setIsPending] = useState<StrOrBoolen>(false);
+  const [isPending, setIsPending] = useState<Boolen>(false);
   const [error, setError] = useState<StrOrNull>(null);
 
   const [fetchOptions, setFetchOption] = useState<Object>({});
